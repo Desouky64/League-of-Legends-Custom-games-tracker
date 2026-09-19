@@ -24,7 +24,6 @@ The League of Legends Custom Game Tracker is a dedicated utility designed to cap
 ## Getting Started
 
 ### Prerequisites
-* A valid [Riot Games Developer API Key](https://developer.riotgames.com/).
 * Node.js and npm (or Python environment) installed locally.
 
 ### Installation

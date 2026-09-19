@@ -1,6 +1,6 @@
 # League of Legends Custom Game Tracker
 
-> A comprehensive analytics tool for League of Legends custom games, offering detailed match history, player statistics, and performance tracking using the Riot Games API.
+> A comprehensive analytics tool for League of Legends custom games, offering detailed match history, player statistics, and performance tracking 
 
 ## Overview
 The League of Legends Custom Game Tracker is a dedicated utility designed to capture, store, and analyze data specifically from custom matches—data that is often overlooked by mainstream tracking sites. Whether organizing local tournaments, tracking internal scrims, or analyzing team performance over time, this tool provides a centralized dashboard to log match details, calculate win rates, and break down individual player metrics. 

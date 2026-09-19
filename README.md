@@ -1,4 +1,6 @@
-[league_custom_game_tracker_readme (1).md](https://github.com/user-attachments/files/32414034/league_custom_game_tracker_readme.1.md)# League of Legends Custom Game Tracker
+[league_custom_game_tracker_readme.md](https://github.com/user-attachments/files/32414037/league_custom_game_tracker_re[league_custom_game_tracker_readme (1).md](https://github.com/user-attachments/files/32414039/league_custom_game_tracker_readme.1.md)
+adme.md)
+# League of Legends Custom Game Tracker
 
 > A comprehensive analytics tool for League of Legends custom games, utilizing AI-powered screenshot analysis to extract, store, and track detailed match history and player statistics.
 

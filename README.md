@@ -1,58 +1,84 @@
-# League of Legends Custom Game Tracker
+[league_custom_game_tracker_readme (1).md](https://github.com/user-attachments/files/32414034/league_custom_game_tracker_readme.1.md)# League of Legends Custom Game Tracker
 
-> A comprehensive analytics tool for League of Legends custom games, offering detailed match history, player statistics, and performance tracking 
+> A comprehensive analytics tool for League of Legends custom games, utilizing AI-powered screenshot analysis to extract, store, and track detailed match history and player statistics.
 
 ## Overview
-The League of Legends Custom Game Tracker is a dedicated utility designed to capture, store, and analyze data specifically from custom matches—data that is often overlooked by mainstream tracking sites. Whether organizing local tournaments, tracking internal scrims, or analyzing team performance over time, this tool provides a centralized dashboard to log match details, calculate win rates, and break down individual player metrics. 
+
+The League of Legends Custom Game Tracker is a dedicated utility designed to capture, store, and analyze data specifically from custom matches—data that is often overlooked by mainstream tracking sites. Instead of relying on traditional game APIs, this tool uses advanced AI vision to read post-match screenshots. Whether organizing local tournaments, tracking internal scrims, or analyzing team performance over time, this tool provides a centralized dashboard to log match details, calculate win rates, and break down individual player metrics.
 
 ## Key Features
-* **Automated Match Fetching:** Integrates with the Riot Games API to pull post-game data directly into the database.
+
+* **AI-Powered Data Extraction:** Simply upload a post-match screenshot. The integrated AI API automatically captures player stats, KDA, champion info, and match results, feeding the data directly into your online database.
+
 * **Custom Leaderboards:** Ranks players based on custom parameters such as KDA, vision score, objective damage, and custom match win rate.
+
 * **Historical Match Archive:** Stores a persistent history of in-house games to track long-term team and individual improvement.
-* **Draft Analysis:** Records pick/ban phases to help teams identify champion synergies and draft trends.
+
+* **Frictionless Entry:** No need for players to link accounts or authenticate with Riot; if you have the screenshot, you have the data.
+
 * **Role-Specific Metrics:** Filters performance data by Top, Jungle, Mid, ADC, and Support roles.
 
 ## Tech Stack
 
-| Component | Technology / Framework | Purpose |
-| :--- | :--- | :--- |
-| **Backend** | Python / Node.js *(Update as needed)* | Handles server logic and API requests |
-| **Frontend** | React / Vue.js *(Update as needed)* | Delivers a responsive, interactive user interface |
-| **Database** | PostgreSQL / MongoDB *(Update as needed)* | Stores player profiles, match histories, and team data |
-| **External API**| Riot Games API | Fetches raw match data, champion assets, and player info |
+| Component | Technology / Framework | Purpose | 
+ | ----- | ----- | ----- | 
+| **Backend** | Python / Node.js *(Update as needed)* | Handles server logic, image processing, and API requests | 
+| **Frontend** | React / Vue.js *(Update as needed)* | Delivers a responsive, interactive user interface for uploading images | 
+| **Database** | PostgreSQL / MongoDB / Firebase *(Update as needed)* | Stores player profiles, match histories, and team data | 
+| **External API** | AI Vision API *(e.g., OpenAI GPT-4V, Google Cloud Vision)* | Processes screenshots to extract raw post-match text and data | 
 
 ## Getting Started
 
 ### Prerequisites
+
+* A valid API Key for your chosen AI Vision service (e.g., OpenAI).
+
 * Node.js and npm (or Python environment) installed locally.
 
 ### Installation
+
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/lol-custom-tracker.git
+
    ```
+   git clone https://github.com/yourusername/lol-custom-tracker.git
+   
+   ```
+
 2. Navigate to the project directory and install dependencies:
-   ```bash
+
+   ```
    cd lol-custom-tracker
    npm install 
+   
    ```
-3. Create a `.env` file in the root directory and add your Riot API key and database credentials:
-   ```env
-   RIOT_API_KEY=your_development_api_key
+
+3. Create a `.env` file in the root directory and add your AI API key and database credentials:
+
+   ```
+   AI_VISION_API_KEY=your_ai_api_key_here
    DB_CONNECTION_STRING=your_database_url
+   
    ```
+
 4. Start the development server:
-   ```bash
+
+   ```
    npm run dev
+   
    ```
 
 ## Future Roadmap
-- [ ] Implement automated Discord webhook notifications for post-match summaries.
-- [ ] Add advanced data visualization charts for gold and experience leads over time.
-- [ ] Build a tournament bracket generation feature for in-house events.
+
+* \[ \] Implement bulk screenshot uploading for processing multiple games at once.
+
+* \[ \] Add automated Discord webhook notifications for post-match summaries.
+
+* \[ \] Build a tournament bracket generation feature for in-house events.
 
 ## Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/lol-custom-tracker/issues).
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/lol-custom-tracker/issues?utm_source=gemini).
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.

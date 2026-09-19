@@ -77,7 +77,8 @@ The League of Legends Custom Game Tracker is a dedicated utility designed to cap
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/lol-custom-tracker/issues?utm_source=gemini).
+Feel free to try it on :https://desouky64.github.io/League-of-Legends-Custom-games-tracker/
+
 
 ## License
 
